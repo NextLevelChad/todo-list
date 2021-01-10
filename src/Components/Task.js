@@ -16,8 +16,8 @@ function Task({ task, toggleTask, deleteTask })
     return (
 
         <div className="task">  
-            <input id={task.name} className="Task-Completed" type="checkbox" checked={task.complete} onChange={handleTaskClick}></input>
-            <label for={task.name} className="Task-Name" style={{'text-decoration': task.complete ? 'line-through' : 'none'}}>{task.name}</label>      
+            <label for={task.name} className="Task-Name" style={{'text-decoration': task.complete ? 'line-through' : 'none'}}>{task.name}</label> 
+            <input id={task.name} className="Task-Completed" type="checkbox" checked={task.complete} onChange={handleTaskClick}></input>     
             <DeleteOutlinedIcon className="Task-Delete-Icon" onClick={handleDeleteTask}/>
 
         </div>

@@ -31,6 +31,7 @@
 
 }
 
+
 /* Glass-Pane */
 .Glass-Pane {
 
@@ -66,6 +67,7 @@
     backdrop-filter: blur(4px);
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 4px;
+    border: none;
 
     /*Font Styling*/
     font-family: Roboto;
@@ -85,8 +87,9 @@
     height: 40px;
 
     background: rgba(255, 255, 255, 0.74);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 2px 4px rgba(8, 83, 137, 0.25);
     border-radius: 11px;
+    border: none;
 
     font-family: Roboto;
     font-style: normal;
@@ -118,6 +121,24 @@
     font-size: 2rem;
 
     
+}
+
+
+
+
+@media (max-width: 370px) {
+    .Glass-Pane{
+        display: flex;
+        flex-direction: column;
+        min-width: 0px;
+        width: 95%;
+
+    }
+
+    .Add-Task-Text {
+        font-size: .6rem;
+    }
+
 }
 
 
