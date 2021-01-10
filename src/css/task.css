@@ -1,0 +1,30 @@
+.Task {
+    
+}
+
+.Task-Name {
+    /*Font Styling*/
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 9px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgba(3, 48, 80, 0.76);
+
+}
+
+.Task-Completed {
+    opacity: 0;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+
+}
+
+
+.Task-Delete-Icon{
+    float: right;
+}
